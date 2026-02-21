@@ -27,10 +27,10 @@ jobs:
           - x64
           - x86
         include:
-          - os: macOS-latest
+          - os: macOS-latest # Apple Silicon
             julia-arch: aarch64
             julia-version: 'nightly'
-          - os: macOS-13
+          - os: macOS-15-intel # Intel
             julia-arch: x64
             julia-version: 'nightly'
     steps:
